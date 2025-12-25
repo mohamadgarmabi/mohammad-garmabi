@@ -10,30 +10,80 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 
-export const links: Route.LinksFunction = () => [
-  { rel: "preconnect", href: "https://fonts.googleapis.com" },
-  {
-    rel: "preconnect",
-    href: "https://fonts.gstatic.com",
-    crossOrigin: "anonymous",
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
-  },
-];
+export const links: Route.LinksFunction = () => [];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        
+        {/* Structured Data - JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Mohammad Garmabi",
+              alternateName: "محمد گرمابی",
+              jobTitle: "Software Engineer",
+              description: "Software Engineer specializing in Full-Stack Development with React, TypeScript, Python, and Django",
+              url: "https://mohammadgarmabi.dev",
+              sameAs: [
+                "https://linkedin.com/in/mohammad-garmabi",
+                "https://github.com/mohammad-garmabi",
+                "https://npmjs.com/~mohammad.garmabi",
+              ],
+              knowsAbout: [
+                "React.js",
+                "Next.js",
+                "Remix",
+                "Solid.js",
+                "Vite",
+                "Nx",
+                "Nuxt.js",
+                "Tailwind CSS",
+                "CSS-in-JS",
+                "CSS Modules",
+                "SSR",
+                "SSG",
+                "ISR",
+                "Web Vitals",
+                "Lighthouse",
+                "Performance Optimization",
+                "Testing",
+                "Playwright",
+                "Jest",
+                "React Testing Library",
+                "Performance Profiling",
+                "TypeScript",
+                "JavaScript",
+                "Python",
+                "Django",
+                "NestJS",
+                "Frontend Development",
+                "Backend Development",
+                "Full-Stack Development",
+                "Open Source",
+                "NPM Packages",
+                "Web Development",
+              ],
+              alumniOf: {
+                "@type": "EducationalOrganization",
+                name: "Computer Science",
+              },
+            }),
+          }}
+        />
       </head>
       <body>
-        {children}
+        <main id="main-content">
+          {children}
+        </main>
         <ScrollRestoration />
         <Scripts />
       </body>

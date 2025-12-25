@@ -1,0 +1,33 @@
+# humanstxt.org
+
+/* TEAM */
+Developer: Mohammad Garmabi
+Role: Senior Frontend Engineer & Chapter Lead
+Site: https://mohammadgarmabi.dev
+LinkedIn: linkedin.com/in/mohammad-garmabi
+GitHub: github.com/mohammad-garmabi
+NPM: npmjs.com/~mohammad.garmabi
+Location: Iran
+Experience: 5+ years
+Specialization: React, TypeScript, Architecture, Performance
+
+/* SITE */
+Last update: 2025/01/19
+Language: English
+Standards: HTML5, CSS3, ES6+, Web Vitals
+Tech Stack: React Router v7, TypeScript, Tailwind CSS, Vite
+Architecture: SPA, SSR-ready, PWA-capable
+Performance: Optimized for Core Web Vitals
+
+/* PHILOSOPHY */
+Quality is not a feature. It's a constraint.
+Code that works is not enough.
+Code must be readable, testable, scalable, and bulletproof.
+
+/* THANKS */
+React Team
+TypeScript Team
+Remix Team
+Open Source Community
+Everyone who builds systems that last
+

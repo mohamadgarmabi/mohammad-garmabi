@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<%
+  // This is a template for dynamic sitemap.xml generation
+  // You might use EJS, Pug, or another template engine.
+  // Here is the EJS style.
+  const today = new Date().toISOString().slice(0, 10);
+%>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Main Page -->
+  <url>
+    <loc>https://mohammadgarmabi.dev/</loc>
+    <lastmod><%= today %></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Alternate Languages -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammadgarmabi.dev/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mohammadgarmabi.dev/" />
+  </url>
+
+</urlset>
